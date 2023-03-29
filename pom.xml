@@ -21,7 +21,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>11</java.version>
 
-    <console.name>console</console.name>
+    <console.name>app</console.name>
 
     <frontend-maven-plugin.version>1.12.1</frontend-maven-plugin.version>
   </properties>
@@ -74,7 +74,7 @@
       </resource>
       <!-- Add the plugin build to Spring Boot's static resources -->
       <resource>
-        <directory>${console.name}/build</directory>
+        <directory>${console.name}/packages/core/build</directory>
         <targetPath>static</targetPath>
       </resource>
     </resources>
@@ -118,7 +118,7 @@
               <goal>yarn</goal>
             </goals>
             <configuration>
-              <arguments>build</arguments>
+              <arguments>build:core</arguments>
             </configuration>
           </execution>
         </executions>
