@@ -1,0 +1,11 @@
+target/
+
+# IDEs
+.classpath
+.project
+.settings
+.vscode/
+.idea
+*.iws
+*.iml
+*.ipr
